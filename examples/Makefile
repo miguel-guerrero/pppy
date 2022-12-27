@@ -1,6 +1,9 @@
-all: adder
+TESTS=adder.v ex1 ex2 ex3
 
 TOOL=../pp.py
+
+
+all: $(TESTS)
 
 ex1: pp.ex1
 	$(TOOL) $< -p context.json -k val=10 name=miguel -v -o $@
