@@ -1,0 +1,24 @@
+% name=param.name
+% val=param.val
+% x=0
+% for i in range(val):
+% ....if i==2:
+hello ${param.name} ${i} 2
+%     ....x+=1
+% ....else:
+hello ${param.name} ${i} not 2
+%     ....x+=2
+% ....end
+after hello ${name}=${ppio["name"]} x=${ x } x+1=${x+1}
+% ....x+=3
+% end
+% for i in range(5):
+hello ${name} i=${i} x=${x}
+% end
+<%
+for i in range(5):
+    emit(f"yes {i}")
+%>
+% for i in range(5):
+hello ${name}} i=${i} x=${x}
+% ppio['val'] = 11

@@ -1,0 +1,13 @@
+
+
+.def module(n):
+...for i in range(5):
+.....if i==2:
+  hello {{i}}
+.....else:
+  yeah <{i}>
+
+
+..instantiate('mod1', {n: 1, m:2})
+
+

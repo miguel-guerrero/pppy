@@ -1,0 +1,23 @@
+% x=0
+% name = "asd"
+% for i in range(param.val):
+% ....if i==2:
+hello ${param.name} ${i} 2
+% ........x+=1
+% ....else:
+hello ${param.name} ${i} not 2
+% ........x+=2
+% ....end
+after hello ${name}=${paramDict["name"]} x=${ x } x+1=${x+1}
+% ....x+=3
+% end
+% for i in range(5):
+hello name i=${i} x=${x}
+% end
+<|
+for i in range(5):
+    emit(f'yes {i}')
+|>
+% for i in range(5):
+hello ${name} i=${i} x=${x}
+% end
