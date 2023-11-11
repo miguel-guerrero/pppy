@@ -17,7 +17,7 @@ if you need to generate a verbatim piece of output use emit:
 
     <%
     for i in range(5):
-       emit(f'---- {i} ----')
+       emit(f"---- {i} ----")
     %>
 
 
@@ -53,10 +53,10 @@ will print
 
 use 'end' instead of unindent when needed to resolve indentation ambiguity
 
-    % if x>0:
+    % if x > 0:
     aaa
-    %   if y<0:
-    %      x+=1
+    %   if y < 0:
+    %      x += 1
     bbb  
 
 Is bbb covered by the 2nd if?  it is a bit ambiguous as the prints implicit
@@ -64,19 +64,19 @@ in the non-python lines has no indentation. By default they are assumed to
 belong to the innermost block opened in python, but to resolve this you may 
 need to insert explicit end's
 
-    % if x>0:
+    % if x > 0:
     aaa
-    %   if y<0:
-    %      x+=1
+    %   if y < 0:
+    %      x += 1
     %   end
     bbb  
 
 OR (this is equivalent to the default)
 
-    % if x>0:
+    % if x > 0:
     aaa
-    %   if y<0:
-    %      x+=1
+    %   if y < 0:
+    %      x += 1
     bbb  
     %   end
 
