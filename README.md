@@ -49,9 +49,9 @@ will print
 
 ## 3. Embedding a line of python
 
-    % (with a space after) is to insert python code
+    % (with a space after) is used to insert python code
 
-use 'end' instead of unindent when needed to resolve indentation anbiguity
+use 'end' instead of unindent when needed to resolve indentation ambiguity
 
     % if x>0:
     aaa
