@@ -26,7 +26,7 @@ if you need to generate a verbatim piece of output use emit:
 
 For example 
 
-    3*8 = {{3*8}}
+    3*8 = ${3*8}
 
 will print
 
@@ -39,7 +39,7 @@ or
     y=2
     %>
 
-    x + y = {{x+y}}
+    x + y = ${x+y}
 
 will print
 
